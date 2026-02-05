@@ -1,0 +1,35 @@
+@use 'variables';
+
+.menu {
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid variables.$corDasBordas;
+
+    &__container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        &__link {
+            font-family: variables.$fonteDestaque;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: variables.$corDosLinks;
+            text-decoration: none;
+            transition: color .3s ease;
+
+            &:hover {
+                color: variables.$corDoHover;
+            }
+        }
+    }
+
+}
