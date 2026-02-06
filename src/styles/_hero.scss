@@ -1,0 +1,30 @@
+@use 'variables';
+
+.hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+
+    &__container {
+        max-width: 900px;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: variables.$fonteDestaque;
+        font-size: 3.5rem;
+        font-style: italic;
+        letter-spacing: 1px;
+    }
+
+    &__event-date,
+    &__text {
+        margin-bottom: 3rem;
+        font-family: variables.$fonteDatas;
+        font-size: 1.5rem;
+        color: variables.$corDosLinks;
+        letter-spacing: 2px;
+    }
+}

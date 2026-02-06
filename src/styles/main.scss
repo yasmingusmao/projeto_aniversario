@@ -1,11 +1,11 @@
 @use 'variables';
 @use 'header';
+@use 'hero';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: variables.$corDeFundo;
 }
 
 html {
@@ -13,5 +13,9 @@ html {
 }
 
 body {
+    background-image: url("../image/fundo_.jpg");
+    background-position: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: variables.$corDoTexto;
 }

@@ -7,6 +7,7 @@
     z-index: 100;
     border-bottom: 3px solid variables.$corDasBordas;
 
+
     &__container {
         max-width: 960px;
         margin: 0 auto;
@@ -21,7 +22,9 @@
         &__link {
             font-family: variables.$fonteDestaque;
             font-size: 1.1rem;
+            font-weight: 600;
             line-height: 1.6;
+            letter-spacing: 1px;
             color: variables.$corDosLinks;
             text-decoration: none;
             transition: color .3s ease;
@@ -31,5 +34,4 @@
             }
         }
     }
-
 }
