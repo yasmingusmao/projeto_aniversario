@@ -1,6 +1,8 @@
 @use 'variables';
 @use 'header';
 @use 'hero';
+@use 'form';
+@use 'footer';
 
 * {
     margin: 0;
@@ -13,9 +15,6 @@ html {
 }
 
 body {
-    background-image: url("../image/fundo_.jpg");
-    background-position: 80%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: variables.$corDeFundo;
     color: variables.$corDoTexto;
 }

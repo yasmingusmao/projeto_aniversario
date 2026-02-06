@@ -13,12 +13,12 @@
     <header class="menu">
         <div class="menu__container">
             <nav class="menu__navbar">
-                <a href="" class="menu__navbar__link">Sobre o evento</a>
-                <a href="" class="menu__navbar__link">Confirme sua presença</a>
+                <a href="#evento" class="menu__navbar__link">Sobre o evento</a>
+                <a href="#presenca" class="menu__navbar__link">Confirme sua presença</a>
             </nav>
         </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="evento">
         <div class="hero__container">
             <h1 class="hero__title">Salve a data</h1>
             <p class="hero__event-date">09 de novembro de 2026</p>
@@ -27,7 +27,28 @@
             </p>
         </div>
     </section>
-    
+    <section class="confirmacao" id="presenca">
+        <div class="confirmacao__container">
+            <h2 class="confirmacao__title">Confirme aqui sua presença</h2>
+            <form class="confirmacao__form">
+                <label for="fullName" class="confirmacao__form__label">Nome completo</label>
+                <input type="text" id="fullName" class="confirmacao__form__input" placeholder="Preencha seu nome completo" required>
+                <label for="presenca" class="confirmacao__form__label">Posso contar com sua presença?</label>
+                <select id="presenca" class="confirmacao__form__input" required>
+                    <option value="">Selecione uma opção:</option>
+                    <option value="yes">Pode contar comigo!</option>
+                    <option value="no">Infelizmente, não</option>
+                </select>
+                <label for="mensagem" class="confirmacao__form__label">Deixe sua mensagem</label>
+                <textarea id="mensagem" rows="4" cols="50"  class="confirmacao__form__input"></textarea>
+                <button type="submit" class="confirmacao__form__btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer class="creditos">
+        <p>&copy; 2026 My Birthday Celebration. All rights reserved.</p>
+    </footer>
+
     <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,9 @@
+@use 'variables';
+
+.creditos {
+    padding: 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: variables.$corDeFundo;
+    color: variables.$corDoTexto;
+}

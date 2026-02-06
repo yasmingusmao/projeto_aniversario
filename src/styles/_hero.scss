@@ -6,6 +6,11 @@
     align-items: center;
     justify-content: center;
     padding: 3rem 2rem;
+    background-image: url("../image/fundo_.jpg");
+    background-position: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid variables.$corDasBordas;
 
     &__container {
         max-width: 900px;
